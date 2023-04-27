@@ -16,8 +16,8 @@ body {
   height: 1755px;
   background: #0b0216;
   border-radius: 0px 0px 56px 56px;
-  background-image: url('/assets/headerBackLeft.png'),
-    url('/assets/headerBackRight.png');
+  background-image: url('../assets/headerBackLeft.png'),
+    url('../assets/headerBackRight.png');
   background-position: top left, top right;
   background-repeat: no-repeat, no-repeat;
 }
@@ -344,7 +344,7 @@ body {
   height: 576px;
   border-radius: 50px;
   background-color: #0b0216;
-  background-image: url('/assets/technologyEchlip.png');
+  background-image: url('../assets/technologyEchlip.png');
   background-position: right;
   background-repeat: no-repeat;
   margin: 0 auto;
