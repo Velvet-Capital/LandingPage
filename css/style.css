@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'custom';
-  src: url('/css/fonts/KlarheitGrotesk/KlarheitGrotesk-Medium.otf'),
-    url('/css/fonts/KlarheitGrotesk/KlarheitGrotesk-bold.otf');
+  src: url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Book.otf'),
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Medium.otf');
   font-weight: normal;
   font-style: normal;
 }
