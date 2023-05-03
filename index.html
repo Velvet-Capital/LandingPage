@@ -33,8 +33,42 @@
   <body>
     <!-- Header Section -->
     <header class="headerSection">
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- site logo -->
+            <a href="#home" class="site-logo"
+              ><img src="./assets/headerLogo.svg" alt="logo"
+            /></a>
+
+            <!-- site menu/nav -->
+            <ul>
+              <hr />
+              <li><a href="#">For Institutions</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <div class="socialLogo">
+                <img src="./assets/discoed.svg" alt="socialMedia" />
+                <img src="./assets/linkdin.svg" alt="socialMedia" />
+                <img src="./assets/twitter.svg" alt="socialMedia" />
+                <img src="./assets/telegram.svg" alt="socialMedia" />
+              </div>
+              <p>© 2023 Velvet Capital. All Rights Reserved.</p>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
       <div class="headerCointainr">
-        <img src="./assets/headerLogo.png" alt="logo" />
+        <img src="./assets/headerLogo.svg" alt="logo" />
         <ul>
           <li>For Institutions</li>
           <li>About</li>
@@ -43,10 +77,11 @@
         </ul>
         <a>Launch App</a>
       </div>
+
       <div class="headerMain">
         <div class="headingDiv">
           <p class="heading">
-            Grow a Diversified Yield-<br />Generating DeFi Portfolio
+            Grow a Diversified Yield-Generating DeFi Portfolio
           </p>
           <p class="subHeading">
             The best of DeFi: optimized yield, maximum capital<br />
@@ -54,25 +89,34 @@
           </p>
           <a>Start earning </a>
         </div>
-        <div class="investmentDiv">
-          <div>
-            <p class="investmentHeading">Backed & trusted by</p>
-            <img src="./assets/binanceLab.png" alt="binanceLab" />
+        <div class="invetsmeAndPortfolioWrapper">
+          <div class="investmentDiv">
+            <div>
+              <p class="investmentHeading">Backed & trusted by</p>
+              <img src="./assets/binanceLab.svg" alt="binanceLab" />
+            </div>
+            <div>
+              <p class="investmentHeading">Total Value Locked</p>
+              <p class="investmentValue">$19,832,335</p>
+            </div>
+            <div>
+              <p class="investmentHeading">Number of Deposits</p>
+              <p class="investmentValue">1,340</p>
+            </div>
+            <div>
+              <p class="investmentHeading">Transaction Volume</p>
+              <p class="investmentValue">$87,992,094</p>
+            </div>
           </div>
-          <div>
-            <p class="investmentHeading">Total Value Locked</p>
-            <p class="investmentValue">$19,832,335</p>
-          </div>
-          <div>
-            <p class="investmentHeading">Number of Deposits</p>
-            <p class="investmentValue">1,340</p>
-          </div>
-          <div>
-            <p class="investmentHeading">Transaction Volume</p>
-            <p class="investmentValue">$87,992,094</p>
+          <div class="portfolioImgDiv">
+            <img src="./assets/App.svg" alt="mainImg" class="portfolioImg" />
+            <img
+              src="./assets/mobileportfioloImg.png"
+              alt="mainImg"
+              class="portfolioImgMobile"
+            />
           </div>
         </div>
-        <img src="./assets/App.png" alt="mainImg" class="portfolioImg" />
         <div class="additionalYeild">
           <div>
             DeFi portfolios<br />
@@ -89,13 +133,18 @@
           Building with
           <hr />
         </div>
+        <div class="buildWithMobile">
+          <hr />
+          Building with
+          <hr />
+        </div>
         <div class="buildWithLogo">
-          <img src="./assets/bnb.png" alt="brandLogo" />
-          <img src="./assets/chainlink.png" alt="brandLogo" />
-          <img src="./assets/oneInch.png" alt="brandLogo" />
-          <img src="./assets/0x.png" alt="brandLogo" />
-          <img src="./assets/pancake.png" alt="brandLogo" />
-          <img src="./assets/venus.png" alt="brandLogo" />
+          <img src="./assets/bnb.svg" alt="brandLogo" />
+          <img src="./assets/chainlink.svg" alt="brandLogo" />
+          <img src="./assets/oneInch.svg" alt="brandLogo" />
+          <img src="./assets/0x.svg" alt="brandLogo" />
+          <img src="./assets/pancake.svg" alt="brandLogo" />
+          <img src="./assets/venus.svg" alt="brandLogo" />
         </div>
       </div>
     </header>
@@ -106,49 +155,57 @@
           <p class="productTag">Product</p>
           <p class="mainHeading">
             DeFi Portfolio<br />
-            Management <span>Done Right</span>
+            Management
+            <span>Done Right</span>
           </p>
           <p class="mainSubHeading">
-            The best of DeFi: optimized yield, maximum capital<br />
-            efficiency, and diversification.
+            The best of DeFi: optimized yield, maximum capital efficiency, and
+            diversification.
           </p>
-          <a>Start earning </a>
         </div>
         <div class="productDetails">
           <div class="productCard">
             <span class="cardtag">Customizable</span>
             <p>Get ready-to-use DeFi portfolios or create your own</p>
             <div class="cardImgContainer">
-              <img src="./assets/cardOne.png" alt="cardimgs" />
+              <img class="cardOne" src="./assets/cardOne.svg" alt="cardimgs" />
             </div>
           </div>
           <div class="productCard">
-            <span class="cardtag">Customizable</span>
-            <p>Get ready-to-use DeFi portfolios or create your own</p>
+            <span class="cardtag">On-chain & secure</span>
+            <p>Velvet is non-custodial*, and regularly audited</p>
             <div class="cardImgContainer">
-              <img src="./assets/cardOne.png" alt="cardimgs" />
+              <img class="cardTwo" src="./assets/cardTwo.svg" alt="cardimgs" />
             </div>
           </div>
           <div class="productCard">
-            <span class="cardtag">Customizable</span>
-            <p>Get ready-to-use DeFi portfolios or create your own</p>
+            <span class="cardtag">Maximize Capital Efficiency</span>
+            <p>Earn additional interest with yield farming solutions</p>
             <div class="cardImgContainer">
-              <img src="./assets/cardOne.png" alt="cardimgs" />
+              <img
+                class="cardThree"
+                src="./assets/cardThree.svg"
+                alt="cardimgs"
+              />
             </div>
           </div>
           <div class="productCard">
-            <span class="cardtag">Customizable</span>
-            <p>Get ready-to-use DeFi portfolios or create your own</p>
+            <span class="cardtag">Dynamic</span>
+            <p>Let the best fund managers & algorithms do the hard work</p>
             <div class="cardImgContainer">
-              <img src="./assets/cardOne.png" alt="cardimgs" />
+              <img
+                class="cardFour"
+                src="./assets/cardFour.svg"
+                alt="cardimgs"
+              />
             </div>
           </div>
         </div>
         <div class="secureby">
           <p>Security Audited by</p>
           <div>
-            <img src="./assets/secureOne.png" alt="auditLogo" />
-            <img src="./assets/secureTwo.png" alt="auditLogo" />
+            <img src="./assets/secureOne.svg" alt="auditLogo" />
+            <img src="./assets/secureTwo.svg" alt="auditLogo" />
           </div>
         </div>
 
@@ -157,13 +214,12 @@
             <div class="innerTechnolodyDiv">
               <p class="technologyTag">Technology</p>
               <p class="technologyMainHeading">
-                All the necessary<br />
-                infrastructure for on-chain<br />
-                portfolio management
+                All the necessary infrastructure for on-chain portfolio
+                management
               </p>
               <p class="technologySubHeading">
-                Duis bibendum quis ipsum sem egestas dictumst<br />
-                risus. Duis elementum vitae sed bibendum.
+                Duis bibendum quis ipsum sem egestas dictumst risus. Duis
+                elementum vitae sed bibendum.
               </p>
               <div>
                 <a class="technologyLearnMore"> Learn more</a>
@@ -172,20 +228,21 @@
             </div>
           </div>
           <div class="featuredOn">
+            <hr />
             Velvel Capital featured on
             <hr />
           </div>
           <div class="feactureLogo">
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
-            <img src="./assets/bnbBrandLogo.png" alt="brandlogo" />
+            <img src="./assets/brand1.svg" alt="brandlogo" />
+            <img src="./assets/brand2.svg" alt="brandlogo" />
+            <img src="./assets/brand3.svg" alt="brandlogo" />
+            <img src="./assets/brand4.svg" alt="brandlogo" />
+            <img src="./assets/brand5.svg" alt="brandlogo" />
+            <img src="./assets/brand6.svg" alt="brandlogo" />
+            <img src="./assets/brand7.svg" alt="brandlogo" />
+            <img src="./assets/brand8.svg" alt="brandlogo" />
+            <img src="./assets/brand9.svg" alt="brandlogo" />
+            <img src="./assets/brand10.svg" alt="brandlogo" />
           </div>
         </div>
       </div>
@@ -295,8 +352,8 @@
               team.
             </p>
           </div>
-          <div>
-            <spna class="faqBtn">See all news</spna>
+          <div class="seeAllNewsDiv">
+            <spna class="seeAllNews">See all news</spna>
           </div>
         </div>
         <div class="blogCardContainer">
@@ -313,7 +370,7 @@
               <span class="guid"> Guides </span>
             </div>
             <div class="blogCardRight">
-              <img src="./assets/blogCardImg.png" alt="blogcard" />
+              <img src="./assets/blog1.png" alt="blogcard" />
             </div>
           </div>
           <div class="blogCard">
@@ -329,7 +386,7 @@
               <span class="guid"> Guides </span>
             </div>
             <div class="blogCardRight">
-              <img src="./assets/blogCardImg.png" alt="blogcard" />
+              <img src="./assets/blog2.png" alt="blogcard" />
             </div>
           </div>
           <div class="blogCard">
@@ -345,7 +402,7 @@
               <span class="guid"> Guides </span>
             </div>
             <div class="blogCardRight">
-              <img src="./assets/blogCardImg.png" alt="blogcard" />
+              <img src="./assets/blog3.png" alt="blogcard" />
             </div>
           </div>
           <div class="blogCard">
@@ -361,7 +418,7 @@
               <span class="guid"> Guides </span>
             </div>
             <div class="blogCardRight">
-              <img src="./assets/blogCardImg.png" alt="blogcard" />
+              <img src="./assets/blog4.png" alt="blogcard" />
             </div>
           </div>
         </div>
@@ -373,7 +430,7 @@
       <div class="mainFooterContainer">
         <div class="blogFooter">
           <div class="blogFooterLeft">
-            <img src="./assets/lightLamp.png" alt="lamp" />
+            <img src="./assets/lightLamp.svg" alt="lamp" />
             <p>Enlighten yourself with the latest news on Velvet and DeFi</p>
           </div>
           <div class="blogFooterRight">
@@ -383,11 +440,13 @@
         </div>
         <div class="footerContainer">
           <div class="footerTop">
-            <p class="footerTopGetStart">Get started</p>
-            <p class="footerTopHeading">
-              Start growing your DeFi portfolio today
-            </p>
-            <button>Start earning</button>
+            <div>
+              <p class="footerTopGetStart">Get started</p>
+              <p class="footerTopHeading">
+                Start growing your DeFi portfolio today
+              </p>
+              <button>Start earning</button>
+            </div>
           </div>
           <div class="footerBottom">
             <hr />
@@ -395,8 +454,10 @@
               <img src="./assets/headerLogo.png" alt="logo" />
               <ul>
                 <li>For Institutions</li>
+                <li>Technology</li>
                 <li>About</li>
                 <li>Docs</li>
+                <li>Blog</li>
                 <li>Contact</li>
               </ul>
             </div>
@@ -407,10 +468,10 @@
                 <a>Terms & Conditions</a>
               </div>
               <div class="socialLogo">
-                <img src="./assets/discordLogo.png" alt="socialMedia" />
-                <img src="./assets/discordLogo.png" alt="socialMedia" />
-                <img src="./assets/discordLogo.png" alt="socialMedia" />
-                <img src="./assets/discordLogo.png" alt="socialMedia" />
+                <img src="./assets/discoed.svg" alt="socialMedia" />
+                <img src="./assets/linkdin.svg" alt="socialMedia" />
+                <img src="./assets/twitter.svg" alt="socialMedia" />
+                <img src="./assets/telegram.svg" alt="socialMedia" />
               </div>
             </div>
           </div>
