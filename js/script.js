@@ -40,3 +40,32 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+// subscribe
+var input = document.getElementById('myInput');
+var button = document.getElementById('myButton');
+// Do something with the input element, e.g. get its value
+var inputValue = input.value;
+button.addEventListener('click', function () {
+  const payload = {
+    email: input.value,
+    referring_pub_id: '',
+    additional_referring_pub_ids: '',
+    referral_code: '',
+    source: 'embed',
+    first_referrer: 'https://velvet.capital/',
+    first_url: 'https://velvetcapital.substack.com/embed',
+    current_referrer: 'https://velvetcapital.substack.com/',
+    current_url: 'https://velvetcapital.substack.com/embed',
+  };
+
+  fetch('https://velvetcapital.substack.com/api/v1/free', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+    headers: {
+      'content-type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error(error));
+});

@@ -33,7 +33,7 @@ body {
   width: 225px;
 }
 .headerCointainr ul {
-  margin-right: 50px;
+  margin-right: 75px;
   font-family: 'custom';
   font-style: normal;
   font-weight: 500;
@@ -58,6 +58,11 @@ body {
   border-radius: 100px;
 }
 .headerCointainr a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.launchApp {
+  text-decoration: none;
   width: 138px;
   height: 48px;
   border: 1px solid #7000ff;
@@ -69,7 +74,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.headerCointainr a:hover {
+.launchApp:hover {
   background: #7000ff;
 }
 .headerMain {
@@ -79,10 +84,11 @@ body {
 .headingDiv {
   color: #ffffff;
   margin: 5rem auto;
+  margin-bottom: -3rem;
 }
 .heading {
   text-align: center;
-  width: 638px;
+  width: 700px;
   font-style: normal;
   font-weight: 500;
   font-size: 56px;
@@ -98,6 +104,7 @@ body {
   margin: 2rem 0;
 }
 .headingDiv a {
+  text-decoration: none;
   width: 138px;
   height: 48px;
   border: 1px solid #7000ff;
@@ -194,6 +201,7 @@ body {
   color: #7000ff;
 }
 .additionalYeild a {
+  text-decoration: none;
   cursor: pointer;
   font-style: normal;
   font-weight: 600;
@@ -910,14 +918,20 @@ footer {
   letter-spacing: -0.03em;
   color: #ffffff;
 }
-.footerTop button {
-  width: 126px;
+.footerTop a {
+  text-decoration: none;
+  width: 138px;
   height: 48px;
-  background: #7000ff;
+  border: 1px solid #7000ff;
   border-radius: 90px;
-  border: none;
+  display: flex;
+  justify-content: center;
   color: #ffffff;
-  margin: 1rem;
+  background: #7000ff;
+  align-items: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .footerBottom {
   background: #0b0216;
@@ -961,6 +975,10 @@ footer {
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+.footerBottomLeft a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .footerBottomLeft li:hover {
   background-color: #231b2d;
@@ -1023,7 +1041,13 @@ footer {
 .buildWithMobile {
   display: none;
 }
-
+.substakEmbed {
+  margin-bottom: auto;
+  margin-top: 2rem;
+}
+.success {
+  width: 400px;
+}
 /* default css end */
 
 /* navbar regular css start */
@@ -1485,5 +1509,11 @@ a.site-logo {
   /* collapsHeading */
   .collapsHeading {
     width: 80%;
+  }
+  .substakEmbed {
+    margin-bottom: 2rem;
+  }
+  .success {
+    width: 375px;
   }
 }
