@@ -399,12 +399,12 @@ p {
   position: relative;
 }
 .cardThree {
-  position: absolute;
-  top: 20px;
+  /* position: absolute;
+  top: 20px; */
 }
 .cardFour {
-  position: absolute;
-  top: -15px;
+  /* position: absolute;
+  top: -15px; */
 }
 .cardImgContainer img {
   margin: auto;
@@ -487,6 +487,9 @@ p {
   justify-content: space-between;
   width: 300px;
   margin-top: 2rem;
+}
+.innerTechnolodyDiv div a {
+  text-decoration: none;
 }
 .technologyLearnMore {
   width: 138px;
@@ -1583,7 +1586,7 @@ a.site-logo {
     width: 375px;
   }
   .headingDiv {
-    margin-bottom: -3rem;
+    margin-bottom: -1rem;
   }
   .seeAllNewsDiv {
     margin: auto;
