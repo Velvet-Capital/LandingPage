@@ -1325,9 +1325,8 @@ a.site-logo {
     font-size: 8px;
   }
   .investmentDiv div {
-    justify-content: center;
-    align-items: center;
     flex-basis: 35%;
+    margin: auto 1rem;
   }
   .portfolioImg {
     display: none;
