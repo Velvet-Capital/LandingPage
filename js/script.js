@@ -16,6 +16,21 @@ for (i = 0; i < coll.length; i++) {
 const navToggler = document.querySelector('.nav-toggler');
 const navMenu = document.querySelector('.site-navbar ul');
 const navLinks = document.querySelectorAll('.site-navbar a');
+// Get a reference to the <html> element
+// Get a reference to the <html> element
+const htmlEl = document.querySelector('html');
+
+// Add a listener for the scroll event
+window.addEventListener('scroll', () => {
+  // If the toggle is open, add the 'scroll-lock' class to the <html> element
+  if (navMenu.classList.contains('open')) {
+    htmlEl.classList.add('scroll-lock');
+  } else {
+    htmlEl.classList.remove('scroll-lock');
+  }
+});
+
+// Add a listener for the scroll event
 
 // load all event listners
 allEventListners();
@@ -32,6 +47,7 @@ function allEventListners() {
 function togglerClick() {
   navToggler.classList.toggle('toggler-open');
   navMenu.classList.toggle('open');
+  htmlEl.classList.remove('scroll-lock');
 }
 
 // navLinkClick function

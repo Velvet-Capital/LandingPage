@@ -1,17 +1,34 @@
 @font-face {
   font-family: 'custom';
   src: url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Book.otf'),
-    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Medium.otf');
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Medium.otf'),
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Light.otf'),
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: 'custom';
   background-color: #ffffff;
   display: block;
   margin: 0;
 }
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.scroll-lock {
+  overflow: hidden;
+}
+/* Apply the animation to text elements */
+p {
+  animation: fadeIn 1s ease-in-out;
+}
 .headerSection {
   height: auto;
   background: #0b0216;
@@ -54,7 +71,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .headerCointainr li:hover {
-  background-color: #231b2d;
+  background-color: #7000ff;
   border-radius: 100px;
 }
 .headerCointainr a {
@@ -62,6 +79,10 @@ body {
   color: #ffffff;
 }
 .launchApp {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
   text-decoration: none;
   width: 138px;
   height: 48px;
@@ -84,7 +105,6 @@ body {
 .headingDiv {
   color: #ffffff;
   margin: 5rem auto;
-  margin-bottom: -3rem;
 }
 .heading {
   text-align: center;
@@ -106,6 +126,10 @@ body {
 .headingDiv a {
   text-decoration: none;
   width: 138px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
   height: 48px;
   border: 1px solid #7000ff;
   border-radius: 90px;
@@ -148,6 +172,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 2rem auto;
+  padding-bottom: 3rem;
 }
 
 .investmentDiv div {
@@ -247,7 +272,7 @@ body {
 .buildWith hr {
   width: 90%;
   height: 0;
-  opacity: 0.1;
+  opacity: 0.4;
 }
 
 .buildWithLogo {
@@ -269,9 +294,10 @@ body {
 }
 .mainHeadingDiv {
   margin-top: 8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .productTag {
+  margin: 2rem;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -282,9 +308,11 @@ body {
   color: #7000ff;
 }
 .mainHeading {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
   font-style: normal;
-  font-weight: 500;
-  font-size: 56px;
   line-height: 110%;
   text-align: center;
   color: #0b0216;
@@ -326,6 +354,9 @@ body {
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
+}
+.mainHeadingDiv {
+  margin-top: 5rem;
 }
 .productCard {
   width: 445px;
@@ -378,6 +409,7 @@ body {
 .cardImgContainer img {
   margin: auto;
   height: 375px;
+  width: auto;
 }
 
 .secureby {
@@ -432,6 +464,7 @@ body {
   color: #8e35ff;
 }
 .technologyMainHeading {
+  margin: 2rem 0;
   width: 600px;
   font-style: normal;
   font-weight: 600;
@@ -505,12 +538,13 @@ body {
 }
 .feactureLogo {
   display: grid;
-  grid-template-columns: repeat(5, 225px);
+  grid-template-columns: repeat(5, 235px);
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
 }
 .feactureLogo img {
+  margin: auto;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -546,7 +580,7 @@ body {
   color: #7000ff;
 }
 .faqHEading {
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -556,6 +590,7 @@ body {
   width: 400px;
 }
 .contactUsFaq {
+  margin-top: 2rem;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -577,7 +612,10 @@ body {
   margin: 0 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #0b0216;
 }
+
 .faqBtn:hover {
   color: #ffffff;
   background: #7000ff;
@@ -671,11 +709,10 @@ body {
 }
 /* collapsible end */
 .blogContainer {
-  padding-top: 5rem;
-
+  padding-top: 7rem;
   background-image: url('../assets/blogBackground.png');
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top right;
   background-color: #f4f6fa;
 }
 .o_1 {
@@ -723,6 +760,10 @@ body {
   align-items: center;
 }
 .seeAllNews {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -731,7 +772,6 @@ body {
   background-color: #ffffff;
   border: 1px solid #7000ff;
   color: #0b0216;
-
   border-radius: 90px;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -749,6 +789,9 @@ body {
   align-items: center;
   margin: 3rem auto;
 }
+.blogCardContainer a {
+  text-decoration: none;
+}
 .blogCard {
   display: flex;
   justify-content: space-between;
@@ -757,6 +800,7 @@ body {
   border: 1px solid #e9ecef;
   transition: box-shadow 0.3s ease;
   border-radius: 16px;
+  height: 270px;
 }
 .blogCard:hover {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -765,6 +809,7 @@ body {
   width: 300px;
 }
 .blogCardSubHeading {
+  margin-bottom: 1rem;
   font-style: normal;
   font-weight: 450;
   font-size: 12px;
@@ -772,6 +817,7 @@ body {
   color: #7d7a80;
 }
 .blogCardHeading {
+  margin: 1rem 0;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -802,7 +848,7 @@ body {
 }
 .blogContainer hr {
   width: 1200px;
-  opacity: 0.1;
+  opacity: 0.5;
   margin-top: 5rem;
   margin-bottom: 0;
 }
@@ -866,11 +912,12 @@ footer {
 }
 .mainFooterContainer {
   position: relative;
+  padding-top: 2rem;
 }
 
 .footerContainer {
   position: absolute;
-  top: 185px;
+  top: 200px;
   width: 100%;
   height: 544px;
   background-image: url('../assets/footerBackground.png');
@@ -882,7 +929,7 @@ footer {
 .footerTop {
   width: 100%;
   background-image: linear-gradient(to bottom, transparent, #0b0216),
-    url('../assets/footerBackgroudTwo.svg');
+    url('../assets/footerBackgroudTwo1.svg');
   height: 100%;
   background-repeat: no-repeat;
   background-position: 75%;
@@ -910,6 +957,7 @@ footer {
   color: #8e35ff;
 }
 .footerTopHeading {
+  margin: 2rem 0;
   font-style: normal;
   font-weight: 500;
   font-size: 56px;
@@ -943,6 +991,7 @@ footer {
   opacity: 0.1;
   width: 1200px;
   margin: 1rem auto;
+  margin-bottom: 2rem;
 }
 .footerBottomLeft {
   padding: 2rem auto;
@@ -981,7 +1030,7 @@ footer {
   color: #ffffff;
 }
 .footerBottomLeft li:hover {
-  background-color: #231b2d;
+  background-color: #7000ff;
   border-radius: 100px;
 }
 .footerBottomRight {
@@ -1022,6 +1071,9 @@ footer {
 .socialLogo img {
   margin: 0 1rem;
   transition: opacity 0.3s ease;
+}
+.socialLogo a {
+  text-decoration: none;
 }
 .socialLogo img:hover {
   opacity: 0.5;
@@ -1256,11 +1308,17 @@ a.site-logo {
   .investmentDiv {
     flex-wrap: wrap;
     width: auto;
+    padding-bottom: 1rem;
   }
   .portfolioImgDiv {
     width: auto;
   }
+  .investmentHeading {
+    font-size: 10px;
+  }
   .investmentDiv div {
+    justify-content: center;
+    align-items: center;
     flex-basis: 35%;
   }
   .portfolioImg {
@@ -1318,7 +1376,7 @@ a.site-logo {
     grid-template-columns: repeat(1, 510px);
   }
   .productCard {
-    width: 240px;
+    width: 275px;
     height: auto;
     padding: 30px 30px 0 30px;
   }
@@ -1416,11 +1474,13 @@ a.site-logo {
   }
   .blogHEading {
     width: auto;
+    text-align: center;
   }
   .blogCard {
     flex-direction: column-reverse;
     align-items: center;
     margin: 1rem;
+    height: auto;
   }
   .blogCardLeft {
     width: auto;
@@ -1432,8 +1492,13 @@ a.site-logo {
     width: 100%;
     height: 100%;
   }
+  .blogContainer {
+    padding-top: 3rem;
+    background-image: none;
+  }
   .blogContainer hr {
     width: auto;
+    margin-top: 0;
   }
   .blogFooter {
     margin: auto 1rem;
@@ -1444,6 +1509,7 @@ a.site-logo {
     display: none;
   }
   .blogFooterLeft p {
+    margin: 1rem auto;
     width: auto;
     text-align: center;
   }
@@ -1460,7 +1526,7 @@ a.site-logo {
     margin: 1rem 0;
   }
   .footerContainer {
-    top: 350px;
+    top: 325px;
     background-image: none;
   }
   .footerTop div {
@@ -1476,7 +1542,7 @@ a.site-logo {
   }
   .footerTop {
     border-radius: 40px 40px 0 0;
-    height: 1000px;
+    height: 900px;
     justify-content: start;
     background-image: url('../assets/bacgroundFooterMobile.png');
     background-position: bottom;
@@ -1515,5 +1581,17 @@ a.site-logo {
   }
   .success {
     width: 375px;
+  }
+  .headingDiv {
+    margin-bottom: -3rem;
+  }
+  .seeAllNewsDiv {
+    margin: auto;
+  }
+  .blogTag {
+    text-align: center;
+  }
+  .o_1 {
+    text-align: center;
   }
 }
