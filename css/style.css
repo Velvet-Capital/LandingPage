@@ -986,6 +986,9 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.footerTop a:hover {
+  background-color: #5a00cc;
+}
 .footerBottom {
   background: #0b0216;
   height: auto;
