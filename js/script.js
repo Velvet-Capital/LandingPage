@@ -90,15 +90,15 @@ function storeInput() {
   var inputValue = document.getElementById('input-field').value;
   console.log(inputValue, 'inputValue');
 
-  fetch(
-    `https://script.google.com/macros/s/AKfycbxRZAKwkpF5AQf6RMlfqQd5Lj8xTu7lB3k5nUi1IWxuz3LbbSq1oioQ1A8y3mnRC1ofpQ/exec?action=${inputValue}`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  )
+  fetch(`https://defivas.xyz/api/user/landingPage`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      email: inputValue,
+    }),
+  })
     .then((response) => {
       if (response.ok) {
         console.log('POST request was successful');
