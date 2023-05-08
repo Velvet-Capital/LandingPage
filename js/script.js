@@ -85,3 +85,28 @@ button.addEventListener('click', function () {
     .then((data) => console.log(data))
     .catch((error) => console.error(error));
 });
+
+function storeInput() {
+  var inputValue = document.getElementById('input-field').value;
+  console.log(inputValue, 'inputValue');
+
+  fetch(
+    `https://script.google.com/macros/s/AKfycbxRZAKwkpF5AQf6RMlfqQd5Lj8xTu7lB3k5nUi1IWxuz3LbbSq1oioQ1A8y3mnRC1ofpQ/exec?action=${inputValue}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  )
+    .then((response) => {
+      if (response.ok) {
+        console.log('POST request was successful');
+      } else {
+        console.error('Error in POST request');
+      }
+    })
+    .catch((error) => {
+      console.error('Error in POST request:', error);
+    });
+}
