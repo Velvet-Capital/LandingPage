@@ -1108,6 +1108,16 @@ footer {
 .success {
   width: 400px;
 }
+.footerDisclaimer {
+  max-width: 1200px;
+  color: #ffffff;
+  margin: auto;
+  font-size: 10px;
+  opacity: 0.4;
+}
+.footerDisclaimer p {
+  padding: 0 20px;
+}
 /* default css end */
 
 /* navbar regular css start */
@@ -1605,4 +1615,36 @@ a.site-logo {
   .cardtag {
     font-size: 10px;
   }
+}
+
+/* terms adn condition style  */
+.termsContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.spanP {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 1;
+}
+.termsPara {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+.termsPara span {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 1;
+}
+.termsHeading {
+  font-weight: 700;
+  font-size: 24px;
+}
+.privcyUl,
+.termsUl {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.6;
 }
