@@ -648,5 +648,19 @@
 
     <!-- Custom Js Included -->
   </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./js/script.js"></script>
+  <script>
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal('.portfolioImgDiv', {
+      // duration: 4000,
+      // scale: 0.85,
+      duration: 1000,
+      origin: 'bottom',
+      distance: '100px',
+      easing: 'cubic-bezier(.37,.01,.74,1)',
+      opacity: 0.3,
+      scale: 0.5,
+    });
+  </script>
 </html>
