@@ -102,6 +102,11 @@ function storeInput() {
     .then((response) => {
       if (response.ok) {
         console.log('POST request was successful');
+        Swal.fire(
+          'You’re all set!',
+          'The latest news is coming your way!',
+          'success'
+        );
       } else {
         console.error('Error in POST request');
       }
