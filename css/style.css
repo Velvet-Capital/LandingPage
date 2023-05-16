@@ -1557,11 +1557,12 @@ a.site-logo {
   }
   .footerTopHeading {
     width: auto;
+    font-size: 40px;
     margin: 1rem 0;
   }
   .footerTop {
     border-radius: 40px 40px 0 0;
-    height: 900px;
+    height: 750px;
     justify-content: start;
     background-image: url('../assets/bacgroundFooterMobile.png');
     background-position: bottom;
