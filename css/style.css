@@ -283,9 +283,13 @@ p {
   justify-content: space-between;
   margin-bottom: 5rem;
 }
+.buildWithLogo a {
+  display: flex;
+}
 .buildWithLogo img {
   width: auto;
   height: 40px;
+  object-fit: contain;
 }
 
 /* Main Container start */
@@ -547,9 +551,12 @@ p {
   justify-content: center;
   align-items: center;
 }
+.feactureLogo a {
+  display: flex;
+}
 .feactureLogo img {
   margin: auto;
-  width: auto;
+  width: 150px;
   height: auto;
   object-fit: contain;
 }
@@ -1117,7 +1124,7 @@ footer {
   opacity: 0.4;
 }
 .footerDisclaimer p {
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 /* default css end */
 
@@ -1375,6 +1382,7 @@ a.site-logo {
   .buildWithLogo {
     width: auto;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .buildWithLogo img {
     flex-basis: 40%;
@@ -1617,6 +1625,9 @@ a.site-logo {
   .cardtag {
     font-size: 10px;
   }
+  .footerDisclaimer p {
+    padding: 0 20px;
+  }
 }
 
 /* terms adn condition style  */
@@ -1649,4 +1660,14 @@ a.site-logo {
   font-size: 18px;
   font-weight: 300;
   opacity: 0.6;
+}
+
+/* swal style */
+.swal2-styled.swal2-confirm {
+  width: 126px;
+  height: 48px;
+  background: #7000ff;
+  border-radius: 90px;
+  border: none;
+  color: #ffffff;
 }
