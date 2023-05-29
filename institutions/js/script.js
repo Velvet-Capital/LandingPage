@@ -97,15 +97,15 @@ var btn3 = document.getElementById('myBtn3');
 var span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal
-// btn.onclick = function () {
-//   modal.style.display = 'block';
-// };
-// btn2.onclick = function () {
-//   modal.style.display = 'block';
-// };
-// btn3.onclick = function () {
-//   modal.style.display = 'block';
-// };
+btn.onclick = function () {
+  modal.style.display = 'block';
+};
+btn2.onclick = function () {
+  modal.style.display = 'block';
+};
+btn3.onclick = function () {
+  modal.style.display = 'block';
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -118,3 +118,34 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+function storeEmailAndMessage() {
+  var inputValue1 = document.getElementById('inputOne').value;
+  var inputValue2 = document.getElementById('inputTwo').value;
+
+  fetch(`https://defivas.xyz/api/user/institutional`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      email: inputValue1,
+      message: inputValue2,
+    }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        console.log('POST request was successful');
+        Swal.fire(
+          'You’re all set!',
+          'The latest news is coming your way!',
+          'success'
+        );
+      } else {
+        console.error('Error in POST request');
+      }
+    })
+    .catch((error) => {
+      console.error('Error in POST request:', error);
+    });
+}
