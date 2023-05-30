@@ -456,12 +456,18 @@
         <p>
           Share your information below or
           <a href="https://calendly.com/vasily-at-velvet/30min" target="_blank"
-            >Book a demo directly</a
+            >Book a demo</a
           >
         </p>
         <input placeholder="Email" id="inputOne" />
         <br />
-        <input placeholder="Message" id="inputTwo" />
+        <textarea
+          rows="5"
+          name="description"
+          id="inputTwo"
+          placeholder="Message"
+        ></textarea>
+        <!-- <input placeholder="Message" class="messageInput" /> -->
         <button onclick="storeEmailAndMessage()">Submit</button>
       </div>
     </div>

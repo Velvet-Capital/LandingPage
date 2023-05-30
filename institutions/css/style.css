@@ -1074,6 +1074,18 @@ a.site-logo {
   border: 1px solid #e9ecef;
   border-radius: 8px;
   margin: 5px 0;
+  color: #0b0216;
+}
+
+.modal-content textarea {
+  font-family: 'custom';
+  padding: 10px 20px;
+  width: 250px;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin: 5px 0;
 }
 .modal-content a {
   color: #7000ff;
