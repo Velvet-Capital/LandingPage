@@ -441,6 +441,7 @@ p {
 .secureby div img {
   width: 209px;
   height: 50px;
+  margin: 0 10px;
 }
 .technology {
   width: 1200px;
@@ -1019,7 +1020,7 @@ footer {
 }
 .footerBottomLeft img {
   width: 228px;
-  height: 32.22px;
+  height: 40px;
 }
 .footerBottomLeft ul {
   font-family: 'custom';
