@@ -65,6 +65,7 @@ p {
   padding: 5px;
 }
 .headerCointainr li {
+  border-radius: 100px;
   list-style-type: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -104,7 +105,7 @@ p {
 }
 .headingDiv {
   color: #ffffff;
-  margin: 5rem auto;
+  margin: 6rem auto;
 }
 .heading {
   text-align: center;
@@ -282,9 +283,13 @@ p {
   justify-content: space-between;
   margin-bottom: 5rem;
 }
+.buildWithLogo a {
+  display: flex;
+}
 .buildWithLogo img {
   width: auto;
   height: 40px;
+  object-fit: contain;
 }
 
 /* Main Container start */
@@ -436,6 +441,7 @@ p {
 .secureby div img {
   width: 209px;
   height: 50px;
+  margin: 0 10px;
 }
 .technology {
   width: 1200px;
@@ -546,9 +552,12 @@ p {
   justify-content: center;
   align-items: center;
 }
+.feactureLogo a {
+  display: flex;
+}
 .feactureLogo img {
   margin: auto;
-  width: auto;
+  width: 150px;
   height: auto;
   object-fit: contain;
 }
@@ -1011,7 +1020,7 @@ footer {
 }
 .footerBottomLeft img {
   width: 228px;
-  height: 32.22px;
+  height: 40px;
 }
 .footerBottomLeft ul {
   font-family: 'custom';
@@ -1116,7 +1125,7 @@ footer {
   opacity: 0.4;
 }
 .footerDisclaimer p {
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 /* default css end */
 
@@ -1374,6 +1383,7 @@ a.site-logo {
   .buildWithLogo {
     width: auto;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .buildWithLogo img {
     flex-basis: 40%;
@@ -1556,11 +1566,12 @@ a.site-logo {
   }
   .footerTopHeading {
     width: auto;
+    font-size: 40px;
     margin: 1rem 0;
   }
   .footerTop {
     border-radius: 40px 40px 0 0;
-    height: 900px;
+    height: 750px;
     justify-content: start;
     background-image: url('../assets/bacgroundFooterMobile.png');
     background-position: bottom;
@@ -1615,6 +1626,9 @@ a.site-logo {
   .cardtag {
     font-size: 10px;
   }
+  .footerDisclaimer p {
+    padding: 0 20px;
+  }
 }
 
 /* terms adn condition style  */
@@ -1647,4 +1661,14 @@ a.site-logo {
   font-size: 18px;
   font-weight: 300;
   opacity: 0.6;
+}
+
+/* swal style */
+.swal2-styled.swal2-confirm {
+  width: 126px;
+  height: 48px;
+  background: #7000ff;
+  border-radius: 90px;
+  border: none;
+  color: #ffffff;
 }
