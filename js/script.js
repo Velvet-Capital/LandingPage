@@ -60,30 +60,36 @@ function navLinkClick() {
 function storeInput() {
   var inputValue = document.getElementById('input-field').value;
   console.log(inputValue, 'inputValue');
-  fetch(`https://defivas.xyz/api/user/landingPage`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      email: inputValue,
-    }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        console.log('POST request was successful');
-        Swal.fire(
-          'You’re all set!',
-          'The latest news is coming your way!',
-          'success'
-        );
-      } else {
-        console.error('Error in POST request');
-      }
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailRegex.test(inputValue)) {
+    fetch(`https://defivas.xyz/api/user/landingPage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: inputValue,
+      }),
     })
-    .catch((error) => {
-      console.error('Error in POST request:', error);
-    });
+      .then((response) => {
+        if (response.ok) {
+          console.log('POST request was successful');
+          Swal.fire(
+            'You’re all set!',
+            'The latest news is coming your way!',
+            'success'
+          );
+        } else {
+          console.error('Error in POST request');
+        }
+      })
+      .catch((error) => {
+        console.error('Error in POST request:', error);
+      });
+  } else {
+    Swal.fire('Please enter proper email', 'Example : example@ex.com', 'error');
+  }
 }
 var inputValue = document.getElementById('input-field');
 inputValue.addEventListener('keydown', function (e) {
