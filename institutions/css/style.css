@@ -1130,3 +1130,17 @@ a.site-logo {
     width: 75%;
   }
 }
+
+.wrap {
+  color: #7000ff;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+@media screen and (max-width: 767px) {
+  .wrap {
+    font-size: 40px;
+  }
+}
