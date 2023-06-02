@@ -26,7 +26,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://velvet.capital" />
     <meta name="twitter:site" content="@velvet_capital" />
-
+    <meta name="robots" content="noindex" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <title>Velvet Capital</title>
@@ -35,13 +35,13 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/Favicon.png"
+      href="../assets/favicon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/Favicon.png"
+      href="../assets/favicon.png"
     />
     <link rel="manifest" href="img/site.webmanifest" />
 
@@ -60,7 +60,7 @@
         <div class="navbarContainer">
           <nav class="site-navbar">
             <!-- site logo -->
-            <a href="#home" class="site-logo"
+            <a href="../" class="site-logo"
               ><img src="./assets/darklogo.png" alt="logo"
             /></a>
 
@@ -114,8 +114,11 @@
           </nav>
         </div>
       </div>
+
       <div class="headerCointainr">
-        <img src="./assets/darklogo.png" alt="logo" />
+        <a href="../">
+          <img src="./assets/darklogo.png" alt="logo" />
+        </a>
         <ul>
           <a href="../"> <li>Home</li></a>
           <a href="./"> <li>For Institutions</li></a>
@@ -136,7 +139,16 @@
         </p>
         <p class="heading">DeFi-as-a-Service for</p>
         <div class="container">
-          <span class="text sec-text"> Family Offices</span>
+          <span
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Asset Managers", "Hedge Funds", "Family Offices", "DAOs","Fintechs","Traders" ,"Banks"]'
+          >
+            <!-- <span class="wrap text sec-text"> </span> -->
+            <span class="wrap"></span>
+          </span>
+          <!-- <span class="text sec-text"> Family Offices</span> -->
         </div>
         <p class="subHeading">
           Launch & manage on-chain funds, <br />
@@ -152,12 +164,12 @@
       </div>
       <div class="buildWithLogo">
         <p>Backed by</p>
-        <div><img src="./assets/build1.svg" alt="brandLogo" /></div>
-        <div><img src="./assets/build2.svg" alt="brandLogo" /></div>
-        <div><img src="./assets/build3.svg" alt="brandLogo" /></div>
-        <div><img src="./assets/build4.svg" alt="brandLogo" /></div>
-        <div><img src="./assets/300dao.png" alt="brandLogo" /></div>
-        <div><img src="./assets/build5.svg" alt="brandLogo" /></div>
+        <div><img src="./assets/binance black.png" alt="brandLogo" /></div>
+        <div><img src="./assets/mucker black.png" alt="brandLogo" /></div>
+        <div><img src="./assets/ceras black.png" alt="brandLogo" /></div>
+        <div><img src="./assets/paka black.png" alt="brandLogo" /></div>
+        <div><img src="./assets/300dao black.png" alt="brandLogo" /></div>
+        <div><img src="./assets/SVC black.png" alt="brandLogo" /></div>
       </div>
     </header>
     <div class="crossChain">
