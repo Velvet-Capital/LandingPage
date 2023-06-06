@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'custom';
+  src: url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Book.otf'),
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Medium.otf'),
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Light.otf'),
+    url('./fonts/KlarheitGrotesk/KlarheitGrotesk-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'custom';
+}
+.container {
+  background-image: url('../assets/404background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+.logoDiv {
+  width: 1200px;
+  margin: auto;
+}
+.logoDiv img {
+  width: 307px;
+  height: 63px;
+  margin-top: 4rem;
+  object-fit: contain;
+}
+.heading {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f1f0fa;
+}
+
+.subText {
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  color: #d4d1f3;
+  margin: 5px;
+}
+.subText a {
+  color: #d4d1f3;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+.rightContaner img {
+  width: 479.6px;
+  height: 430px;
+  margin: 38px 0 0;
+  object-fit: contain;
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-color: black;
+  }
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    background-image: none;
+    background-color: black;
+  }
+  .heading {
+    font-size: 28px;
+    text-align: center;
+  }
+  .innerContainer {
+    flex-direction: column;
+    width: auto;
+  }
+  .subText {
+    font-size: 14px;
+    text-align: center;
+  }
+  .logoDiv {
+    width: auto;
+  }
+  .rightContaner img {
+    width: auto;
+  }
+  .leftContaner {
+    width: 100%;
+  }
+  .rightContaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContaner img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
