@@ -5,26 +5,24 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<url>
+  <loc>https://www.velvet.capital/</loc>
+  <lastmod>2023-06-15T09:52:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.velvet.capital/institutions/institutions.html</loc>
+  <lastmod>2023-06-15T09:52:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 <url>
   <loc>https://www.velvet.capital/privacy-policy.html</loc>
-  <lastmod>2023-06-02T09:27:14+00:00</lastmod>
+  <lastmod>2023-06-15T09:52:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.velvet.capital/terms-of-service.html</loc>
-  <lastmod>2023-06-02T09:27:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.velvet.capital/institutions/institutions.html</loc>
-  <lastmod>2023-06-02T09:27:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.velvet.capital/</loc>
-  <lastmod>2023-06-02T09:27:14+00:00</lastmod>
+  <lastmod>2023-06-15T09:52:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
