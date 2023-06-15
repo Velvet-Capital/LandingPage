@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: https://www.velvet.capital
+Allow: https://velvet.capital/sitemap.xml
+Disallow: /private/
+Disallow: /admin/
+Disallow: /secret-page.html
