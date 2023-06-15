@@ -1,5 +1,0 @@
-User-Agent: *
-Allow: https://www.velvet.capital
-Disallow: /private/
-Disallow: /admin/
-Disallow: /secret-page.html
